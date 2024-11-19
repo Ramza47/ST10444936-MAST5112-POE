@@ -5,8 +5,6 @@ import HomePage from "./screens/HomePage";
 import MenuScreen from "./screens/MenuScreen";
 
 
-// Create a Stack Navigator
-
   const Stack = createNativeStackNavigator();
 
   export default function App () {
