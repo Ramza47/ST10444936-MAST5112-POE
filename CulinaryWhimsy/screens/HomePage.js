@@ -23,7 +23,7 @@ const courseData = {
   ],
   
   Dessert: [
-    { label: 'Milk tart - R90', value: 'Milk tart', fee: 90, description: 'A traditional South African dessert consisting of a sweet pastry crust filled with creamy, cinnamon-flavored milk custard.' },
+    { label: 'Milk tart - R85', value: 'Milk tart', fee: 85, description: 'A traditional South African dessert consisting of a sweet pastry crust filled with creamy, cinnamon-flavored milk custard.' },
     { label: 'Koeksisters - R80', value: 'Koeksisters', fee: 80, description: 'Fried dough infused with syrup or honey, with a crispy outside and a sweet, juicy center.' },
     { label: 'Hertzoggies - R85', value: 'Hertzoggies', fee: 85, description: 'Pastry treats filled with sweet coconut and apricot jam.' },
     { label: 'Cremora tart - R100', value: 'Cremora tart', fee: 100, description: 'A no-bake tart made with whipped cream, condensed milk, and a powdered coffee creamer called Cremora.' },

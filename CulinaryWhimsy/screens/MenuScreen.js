@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { View, Text, FlatList, StyleSheet, TouchableOpacity, Alert } from 'react-native';
 
 const MenuScreen = ({ route, navigation }) => {
-  const [menu, setMenu] = useState(route.params.menu); // Use local state for menu
+  const [menu, setMenu] = useState(route.params.menu);
 
-  // Function to remove a menu item
+  // Added a function to remove menu items
   const removeMenuItem = (index) => {
     Alert.alert(
       'Confirm Delete',
@@ -32,8 +32,8 @@ const MenuScreen = ({ route, navigation }) => {
 
       <FlatList
         data={menu}
-        keyExtractor={(item, index) => index.toString()} // Ensure unique keys
-        renderItem={({ item, index }) => ( // Destructure index correctly
+        keyExtractor={(item, index) => index.toString()}
+        renderItem={({ item, index }) => ( 
           <View style={styles.menuItem}>
             <View>
               <Text>Dish: {item.dishName}</Text>
@@ -44,7 +44,7 @@ const MenuScreen = ({ route, navigation }) => {
             {/* Remove Button */}
             <TouchableOpacity
               style={styles.removeButton}
-              onPress={() => removeMenuItem(index)} // Pass index here
+              onPress={() => removeMenuItem(index)} 
             >
               <Text style={styles.removeButtonText}>Remove</Text>
             </TouchableOpacity>
